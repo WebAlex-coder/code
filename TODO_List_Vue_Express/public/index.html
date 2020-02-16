@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="addTaskBlock">
+          <h1 class="card-title">Add new task</h1>
+          <task-add-form></task-add-form>
+          <!-- <form name="addTask" class = 'addTaskBlock__addTaskForm'>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Task title"
+            />
+            <input
+              type="text"
+              name="body"
+              id="body"
+              placeholder="Task body"
+            />
+            <button type="submit">
+              Add task
+            </button> 
+          </form>-->
+        </div>
+      </div>
+  
+  
+      <div class="taskListBlock">
+        <div class="container">
+          <task-list ref = "taskList"></task-list>
+        </div>
+      </div>
+
+      
+    
+    </div>
+    
+   
+    
+    <script src="js/addTaskForm.js"></script>
+    <script src="js/taskList.js"></script>
+    <script src="js/taskItem.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    
+  </body>
+</html>
